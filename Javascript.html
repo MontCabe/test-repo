@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise</title>
+<style>
+</style>
+</head>
+<body>
+    <h1>Hello World!!</h1>
+
+    <script>
+    prelim = prompt("Enter Prelim Grade: ");
+    midTerm = prompt("Enter Midterm Grade: ");
+    final = prompt("Enter Final Grade: ");
+
+    avg = (+prelim + +midTerm + +final)/3;
+
+    if(avg >= 95) {
+    alert("Name: Mont Gomery Cabe"+
+            "\nPrelim: "+prelim +
+            "\nMidterm: " +midTerm+
+            "\nFinals: " +final+
+            "\nAverage Grade: "+avg+
+            "\nStatus: Passed" +
+            "\nRemarks: Excellent");
+    }
+    else if(avg >=85 && avg<=94){
+    alert("Name: Mont Gomery Cabe"+
+            "\nPrelim: "+prelim +
+            "\nMidterm: " +midTerm+
+            "\nFinals: " +final+
+            "\nAverage Grade: "+avg+
+            "\nStatus: Passed" +
+            "\nRemarks: Very Good"); 
+    }
+    else if(avg >=80 && avg<=84){
+    alert("Name: Mont Gomery Cabe"+
+            "\nPrelim: "+prelim +
+            "\nMidterm: " +midTerm+
+            "\nFinals: " +final+
+            "\nAverage Grade: "+avg+
+            "\nStatus: Passed" +
+            "\nRemarks: Good"); 
+    }
+    else if(avg >=75 && avg<=79){
+    alert("Name: Mont Gomery Cabe"+
+            "\nPrelim: "+prelim +
+            "\nMidterm: " +midTerm+
+            "\nFinals: " +final+
+            "\nAverage Grade: "+avg+
+            "\nStatus: Passed" +
+            "\nRemarks: Fair"); 
+    }
+    else{
+        alert("Name: Mont Gomery Cabe"+
+            "\nPrelim: "+prelim +
+            "\nMidterm: " +midTerm+
+            "\nFinals: " +final+
+            "\nAverage Grade: "+avg+
+            "\nStatus: Failed" +
+            "\nRemarks: Needs improvement");
+    }
+    </script>    
+</body>
+</html>
