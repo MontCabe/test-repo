@@ -1,21 +1,16 @@
-import { useState, useEffect } from 'react';
+
 import './App.css';
-
-
+import FunctionalComp from './Components/FunctionalComp';
+import {ClassComp, ClassComp1} from './Components/ClassComp';
 
 const App = () => {
-  const [counter, setCounter] = useState(0);
-
-  useEffect(() => {
-    alert("You've set the counter to "+counter);
-  }, [])
-
   return (
-    <div className="App">
-      <button onClick={() => setCounter( counter - 1)}>-</button>
-      <h1>{counter}</h1>
-      <button onClick={() => setCounter( counter+1)}>+</button>
-
+    <div id="App">
+      <h1>Hello Montyyy</h1>
+      <h1>Do you want to learn React.js?</h1>
+      <ClassComp/>
+      <ClassComp1/>
+      <FunctionalComp/>
     </div>
   );
 }
